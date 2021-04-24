@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search the Database</title>
+    <link rel="stylesheet" href="CSS/topNavStyle.css">
+</head>
+<body>
+    <div class="topnav">
+        <a href="main.php">Home</a>
+        <a href="database.html">Database</a>
+        <a class="active" href="search.html">Search</a>
+        <a href="add.html">Add Data</a>
+        <a href="login.html">Logout</a>
+      </div>
+
+      <br>
+
+      <form action="search-submit.php" method="post">
+        <label for="browser">Choose a Table:</label>
+        <select id="tables" name="table">
+          <option value="employee">Employee</option>
+          <option value="store">Store</option>
+          <option value="warehouse">Warehouse</option>
+          <option value="supplier">Supplier</option>
+          <option value="product">Product</option>
+          <option value="customerorder">Customer Order</option>
+          <option value="supplierorder">Supplier Order</option>
+          <option value="producttransfer">Product Transfer</option>
+          <option value="customer">Customer</option>   
+          </select>
+          <input type="text" name="search" placeholder="Search...">
+        <input type="submit">
+      </form>
+
+
+</body>
+</html>
